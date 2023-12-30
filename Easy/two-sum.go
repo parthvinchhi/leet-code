@@ -1,4 +1,6 @@
-func twoSum(nums []int, target int) []int {
+package easy
+
+func TwoSum(nums []int, target int) []int {
 	var sum int
 	var i int
 	var output []int
@@ -10,4 +12,4 @@ func twoSum(nums []int, target int) []int {
 		}
 	}
 	return output
-} 
+}
