@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	easy "github.com/Pdv2323/Leet-Code/Easy"
+	input "github.com/Pdv2323/Leet-Code/Input"
+)
 
 func main() {
 	var level string
@@ -13,13 +18,21 @@ func main() {
 	fmt.Scanln(&num)
 
 	switch {
-	case level == "Easy":
+	case level == "Easy" || level == "easy":
 		switch num {
 		case 1:
 			var nums []int
 			var target int
-			n = input.SingleInput()
+			target = input.SingleInput()
 			easy.TwoSum(nums, target)
+		}
+	case level == "Medium" || level == "medium":
+		switch num {
+
+		}
+
+	case level == "Hard" || level == "hard":
+		switch num {
 		}
 	}
 }
