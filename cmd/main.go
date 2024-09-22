@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	easy "github.com/Pdv2323/Leet-Code/Easy"
-	input "github.com/Pdv2323/Leet-Code/Input"
+	easy "github.com/parthvinchhi/leet-code/Easy"
+	input "github.com/parthvinchhi/leet-code/Input"
 )
 
 func main() {
