@@ -1,8 +1,15 @@
 package main
 
-import medium "github.com/parthvinchhi/leet-code/Medium"
+import (
+	"fmt"
+
+	easy "github.com/parthvinchhi/leet-code/Easy"
+)
 
 func main() {
-	nums := []int{1, 2, 3, 4, 5, 6, 7}
-	medium.Rotate(nums, 3)
+	a := "11"
+	b := "1"
+
+	o := easy.BinaryAddition(a, b)
+	fmt.Println(o)
 }
