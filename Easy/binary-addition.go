@@ -1,10 +1,10 @@
 package easy
 
-func BinaryAddition(a, b string) string {
-	carry := 0
-	var total byte
+// func BinaryAddition(a, b string) string {
+// 	carry := 0
+// 	var total byte
 
-	newA := []int(a)
+// 	newA := []int(a)
 
-	return string(total)
-}
+// 	return string(total)
+// }
