@@ -1,30 +1,23 @@
 package easy
 
 func FindtheIndex(haystack, needle string) int {
-	ln := len(needle)
-	lh := len(haystack)
+	mainLen := len(haystack)
+	subLen := len(needle)
 
-	if lh < ln {
-		return -1
-	}
-
-	// for i := range haystack {
-	// 	if i < ln || i <= ln {
-	// 		if haystack[i:i+ln] == needle {
-	// 			return i
-	// 		}
-	// 	}
-	// }
-
-	for i := range haystack {
-		if i < ln && haystack[i:i+ln] == needle {
-			return i
-		} else if i == ln && haystack[i:] == needle {
-			return i
+	// Loop through the main string to find the start of the substring
+	for i := 0; i <= mainLen-subLen; i++ {
+		match := true
+		for j := 0; j < subLen; j++ {
+			if haystack[i+j] != needle[j] {
+				match = false
+				break
+			}
+		}
+		if match {
+			return i // Return the index if we found the substring
 		}
 	}
-
-	return -1
+	return -1 // Return -1 if the substring is not found
 }
 
 // func strStr(haystack string, needle string) int {
