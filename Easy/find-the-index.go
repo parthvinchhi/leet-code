@@ -29,3 +29,26 @@ func FindtheIndex(haystack, needle string) int {
 // 	}
 // 	return -1
 // }
+
+func Extra(haystack, needle string) int {
+	mainLen := len(haystack)
+	subLen := len(needle)
+
+	if subLen > mainLen {
+		return -1 // Return immediately if substring is longer than the main string
+	}
+
+	maxIndex := mainLen - subLen
+	for i := 0; i <= maxIndex; i++ {
+		j := 0
+		for ; j < subLen; j++ {
+			if haystack[i+j] != needle[j] {
+				break
+			}
+		}
+		if j == subLen { // All characters matched
+			return i
+		}
+	}
+	return -1
+}
